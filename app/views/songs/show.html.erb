@@ -1,0 +1,14 @@
+<div>
+  <h1><%= @song.title%></h1>
+  <ul>
+    <li>
+      <label><%= @song.artist_name%></label></br>
+      <label><%= @song.genre%></label></br>
+      <label><%= @song.release_year%></label></br>
+    </li>
+  </ul>
+</div>
+
+<%= link_to "Back to Home", songs_path%>
+<%= link_to "Edit", edit_song_path(@song)%>
+<%= link_to 'Delete',  method: :delete %>
